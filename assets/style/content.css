@@ -1,0 +1,185 @@
+body {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navbar {
+  background-color: #ede1db;
+  margin: auto;
+  padding: 0;
+  z-index: 200;
+}
+
+#navbar .nav-navbar {
+  height: 10vh;
+  max-width: 26rem;
+  margin: auto;
+  position: sticky;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  z-index: 300;
+}
+
+#navbar a p {
+  text-decoration: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84%;
+  /* 16.8px */
+  z-index: 300;
+}
+
+#navbar ul li {
+  margin-right: 25px;
+}
+
+#navbar ul li a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+#navbar ul li a:hover {
+  color: #4f6f52;
+}
+
+#navbar .active {
+  top: 0 !important;
+}
+
+#navbar .darkmode-toggle i {
+  transition: all 0.2s;
+  z-index: 400;
+}
+
+#navbar .darkmode-toggle .ph-sun-bold {
+  opacity: 0;
+}
+
+#navbar .menu_btn span,
+#navbar .menu_btn span::before,
+#navbar .menu_btn span::after {
+  background-color: #000;
+}
+
+#navbar #menu_toggle {
+  opacity: 0;
+}
+
+#navbar #menu_toggle:checked + .menu_btn > span {
+  transform: rotate(45deg);
+}
+
+#navbar #menu_toggle:checked + .menu_btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#navbar #menu_toggle:checked + .menu_btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#navbar #menu_toggle:checked ~ .menu_box {
+  left: 0 !important;
+}
+
+#navbar .nav-menu {
+  transition: all 0.7s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100vh;
+  padding-top: 0.4em;
+}
+
+#navbar .nav-menu .nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12vh 0 5% 10%;
+  background-color: #ede1db;
+  height: 100vh;
+}
+
+#navbar .nav-navbar .logo {
+  width: clamp(80px, 80%, 200px);
+}
+
+#navbar .nav-menu a {
+  color: #000;
+}
+
+#navbar .menu_btn {
+  position: absolute;
+  top: 0.4em;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#navbar .menu_btn > span,
+#navbar .menu_btn > span::before,
+#navbar .menu_btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transition-duration: 0.5s;
+}
+
+#navbar .menu_btn > span::before {
+  content: "";
+  top: -7px;
+}
+
+#navbar .menu_btn > span::after {
+  content: "";
+  top: 7px;
+}
+
+#main {
+  max-width: 26rem;
+  margin: auto;
+  background-color: #8e9053;
+  background-image: url(../images/background.webp);
+  background-size: 70%;
+  background-repeat: repeat;
+}
+
+#main .assets {
+  min-height: clamp(500px, 100vh, 778px);
+  position: relative;
+  overflow: hidden;
+}
+
+#main .name,
+#main .work,
+#main h1 {
+  text-shadow: 2px 2px #000;
+}
+
+#main .name {
+  font-size: 1.7rem;
+}
+
+#main .image-trigger {
+  cursor: pointer;
+}
+
+#main .work {
+  font-size: 1.5rem;
+}
+
+#main h1 {
+  font-style: italic;
+}
