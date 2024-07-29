@@ -169,8 +169,7 @@ body {
   right: 0;
   bottom: 0;
   position: fixed;
-  margin-right: 26rem;
-  margin: 0 1rem 1rem 0;
+  padding: 0 1rem 1rem 0;
 }
 
 .btn-sound {
