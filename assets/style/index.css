@@ -5,16 +5,17 @@ body {
   background-color: #f4dbd4;
 }
 
-#content {
+#content,
+#messages {
   max-width: 26rem;
   margin: auto;
   background-color: #ffe6df;
-  background-image: url(../images/home.png);
   background-size: 100%;
   background-repeat: repeat;
   min-height: 100vh;
   position: relative;
-  border: #efbac2 2px solid;
+  border-left: #efbac2 2px solid;
+  border-right: #efbac2 2px solid;
 }
 
 #content .assets {
@@ -97,7 +98,7 @@ body {
 }
 
 #content .main-frame .swiper .ella-3 {
-  width: 80%;
+  width: 90%;
   left: 0;
 }
 
@@ -130,4 +131,34 @@ body {
 
 #content .color-5 {
   background-color: #af7761;
+}
+
+/* 
+* Messages section
+*/
+#messages {
+  border-top: 0;
+  z-index: 1000;
+}
+
+#messages .main-frame {
+  width: 80%;
+  height: 65vh;
+  margin-top: 5vh;
+  overflow: hidden;
+}
+
+#messages .main-frame .messages {
+  width: 100%;
+  min-height: 100%;
+}
+
+#messages .main-frame .card-message {
+  height: 50%;
+  border-radius: 25px;
+}
+
+#messages .wave-2 {
+  z-index: -10;
+  margin-top: -50vh;
 }
