@@ -3,14 +3,12 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #f4dbd4;
-  position: relative;
-  max-width: 26rem;
-  margin: auto;
 }
 
 #content,
 #messages {
   max-width: 26rem;
+  overflow: hidden;
   margin: auto;
   background-color: #ffe6df;
   background-size: 100%;
@@ -85,7 +83,7 @@ body {
 
 #content .main-frame {
   width: 60%;
-  height: 65vh;
+  height: clamp(300px, 60vh, 600px);
   margin-top: 24vh;
   border-radius: 100em 100em 50px 50px;
   background-color: #efbac2;
