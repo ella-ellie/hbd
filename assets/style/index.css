@@ -3,6 +3,9 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #f4dbd4;
+  position: relative;
+  max-width: 26rem;
+  margin: auto;
 }
 
 #content,
@@ -161,4 +164,26 @@ body {
 #messages .wave-2 {
   z-index: -10;
   margin-top: -50vh;
+}
+
+.sound-wrapper {
+  z-index: 2000;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin-right: 26rem;
+  margin: 0 1rem 1rem 0;
+}
+
+.btn-sound {
+  width: 100%;
+  border: #000 1px solid;
+  border-radius: 500px;
+  background-color: #fff6f3;
+}
+
+.btn-sound:focus,
+.btn-sound:hover {
+  border: #000 1px solid;
+  background-color: #eee8e7;
 }

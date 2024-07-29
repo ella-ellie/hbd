@@ -31,6 +31,12 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dongle&family=Patrick+Hand&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/icon.png"
+    />
   </head>
   <body>
     <section id="content">
@@ -96,23 +102,45 @@
       <div class="frame d-flex justify-content-center mx-4">
         <div class="main-frame">
           <div class="messages">
-            <div class="swiper-wrapper swiper-wrapper-messages">
-            </div>
+            <div class="swiper-wrapper swiper-wrapper-messages"></div>
           </div>
         </div>
       </div>
 
-      <div class="d-flex justify-content-center mt-3" style="z-index: 10000;">
-          <img
-              src="assets/images/sub-title-2.png"
-              style="width: 80%;z-index: 1000;"
-              alt="Wish you all the best"
-              class="mb-5"
-            />
+      <div class="d-flex justify-content-center mt-3" style="z-index: 10000">
+        <img
+          src="assets/images/sub-title-2.png"
+          style="width: 80%; z-index: 1000"
+          alt="Wish you all the best"
+          class="mb-5"
+        />
       </div>
 
       <img src="assets/images/wave-2.png" alt="wave" class="wave-2" />
     </section>
+
+    <div class="sound-wrapper d-flex justify-content-end">
+      <div class="toggle-sound">
+        <a
+          class="btn btn-sound d-flex align-items-center justify-content-center"
+          onClick="togglePlay()"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M184,64V192a8,8,0,0,1-16,0V64a8,8,0,0,1,16,0Zm40-8a8,8,0,0,0-8,8V192a8,8,0,0,0,16,0V64A8,8,0,0,0,224,56Zm-80,72a15.76,15.76,0,0,1-7.33,13.34L48.48,197.49A15.91,15.91,0,0,1,24,184.15V71.85A15.91,15.91,0,0,1,48.48,58.51l88.19,56.15A15.76,15.76,0,0,1,144,128Zm-16.18,0L40,72.08V183.93Z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <audio id="myAudio" <!-- src="assets/sound/sound.mp3" -->
+      preload="auto" autoplay >
+    </audio>
 
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
     <script

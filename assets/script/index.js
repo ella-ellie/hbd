@@ -27,8 +27,7 @@ firebase
     var data = snapshot.val();
 
     let messages = "";
-    
-    
+
     for (let key in data) {
       let color = getColor();
 
@@ -57,15 +56,29 @@ firebase
     });
   });
 
-  
-  function getColor() {
-    return (
-      "hsl(" +
-      360 * Math.random() +
-      "," +
-      (25 + 70 * Math.random()) +
-      "%," +
-      (85 + 10 * Math.random()) +
-      "%)"
-    );
-  }
+function getColor() {
+  return (
+    "hsl(" +
+    360 * Math.random() +
+    "," +
+    (25 + 70 * Math.random()) +
+    "%," +
+    (85 + 10 * Math.random()) +
+    "%)"
+  );
+}
+
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+}
+
+myAudio.onplaying = function () {
+  isPlaying = true;
+};
+
+myAudio.onpause = function () {
+  isPlaying = false;
+};
