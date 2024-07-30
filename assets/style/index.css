@@ -144,7 +144,7 @@ body {
 
 #messages .main-frame {
   width: 80%;
-  height: 65vh;
+  min-height: 65vh;
   margin-top: 5vh;
   overflow: hidden;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 #messages .main-frame .card-message {
-  height: 50%;
+  height: 100%;
   border-radius: 25px;
 }
 

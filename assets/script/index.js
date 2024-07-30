@@ -50,7 +50,7 @@ firebase
       direction: "horizontal",
       loop: true,
       autoplay: {
-        delay: 4000,
+        delay: 20000,
       },
       effect: "cards",
     });
